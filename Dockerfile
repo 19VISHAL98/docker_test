@@ -7,5 +7,5 @@ COPY . .
 EXPOSE 3000
 RUN chown -R node /usr/src/app
 USER node
-ENTRYPOINT ["s3cmd"]
+ENTRYPOINT [ "java" , "-jar" , "/s3cmd"]
 CMD ["npm", "start"]
