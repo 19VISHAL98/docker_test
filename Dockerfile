@@ -8,5 +8,5 @@ ADD . .
 EXPOSE 3000
 RUN chown -R node /usr/src/app
 USER node
-ENTRYPOINT [ "npm", "start", "/s3cmd"]
+ENTRYPOINT [ "npm", "start", "/jaunpur/docker_test"]
 # CMD ["npm", "start"]
